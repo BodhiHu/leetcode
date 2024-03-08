@@ -16,12 +16,12 @@
 class Solution {
     private Set<Integer> nodes;
 
-    public boolean findTarget(TreeNode root, int k) {
+    public boolean findTarget(TreeNode2 root, int k) {
         nodes = new HashSet<>();
         return find(root, k);
     }
 
-    private boolean find(TreeNode root, int k) {
+    private boolean find(TreeNode2 root, int k) {
         if (root == null) {
             return false;
         }

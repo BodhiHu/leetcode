@@ -1,3 +1,14 @@
+
+#
+# 1 1 1 1 1 1 1 1 1 1
+# 1 1 1 1 1 1 1 1 1 1
+# 1 1 1 1 1 1 1 0 1 1
+# 1 1 1 0 1 1 1 1 1 1
+# 1 1 1 1 1 1 1 1 1 1
+# 1 1 1 1 1 1 1 1 1 1
+# 1 1 1 1 1 1 1 1 1 1
+#
+
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
         m, n = len(mat), len(mat[0])

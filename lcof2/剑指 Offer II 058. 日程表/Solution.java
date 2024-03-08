@@ -8,6 +8,8 @@ class MyCalendar {
     public MyCalendar() {
     }
 
+    // (2, 4) (5, 8) (10, 15)
+    // (9, 10)
     public boolean book(int start, int end) {
         Map.Entry<Integer, Integer> ent = tm.floorEntry(start);
         if (ent != null && ent.getValue() > start) {

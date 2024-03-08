@@ -12,7 +12,7 @@ public class Codec {
     private static final String SEP = ",";
 
     // Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
+    public String serialize(TreeNode2 root) {
         if (root == null) {
             return "";
         }
@@ -21,7 +21,7 @@ public class Codec {
         return sb.toString();
     }
 
-    private void preorder(TreeNode root, StringBuilder sb) {
+    private void preorder(TreeNode2 root, StringBuilder sb) {
         if (root == null) {
             sb.append(NULL + SEP);
             return;
@@ -32,7 +32,7 @@ public class Codec {
     }
 
     // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data) {
+    public TreeNode2 deserialize(String data) {
         if (data == null || "".equals(data)) {
             return null;
         }
@@ -43,12 +43,12 @@ public class Codec {
         return deserialize(vals);
     }
 
-    private TreeNode deserialize(List<String> vals) {
+    private TreeNode2 deserialize(List<String> vals) {
         String first = vals.remove(0);
         if (NULL.equals(first)) {
             return null;
         }
-        TreeNode root = new TreeNode(Integer.parseInt(first));
+        TreeNode2 root = new TreeNode2(Integer.parseInt(first));
         root.left = deserialize(vals);
         root.right = deserialize(vals);
         return root;

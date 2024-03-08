@@ -9,3 +9,7 @@ class Solution:
                     y += 1
                 ans = max(ans, y - x)
         return ans
+
+    # [ 5, 100, 4, 200, 1, 3, 2 ]
+    def longestConsecutive2(self, nums: List[int]) -> int:
+        pass

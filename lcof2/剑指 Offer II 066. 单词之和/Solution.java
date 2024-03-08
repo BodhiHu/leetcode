@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class MapSum {
     private Map<String, Integer> data;
     private Map<String, Integer> t;

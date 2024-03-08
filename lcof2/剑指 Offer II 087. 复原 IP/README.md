@@ -68,6 +68,22 @@ DFS。
 
 <!-- tabs:start -->
 
+<br/>
+OR...non DFS:
+
+```java
+String sNum = "25525511135";
+for (int c1 = 1; c1 <= 3; c1++) {
+    for (int c2 = 1; c2 <= 3; c2++) {
+        for (int c3 = 1; c3 <= 3; c3++) {
+            for (int c4 = 1; c4 <= 3; c4++) {
+                //...
+            }
+        }
+    }
+}
+```
+
 ### **Python3**
 
 <!-- 这里可写当前语言的特殊实现逻辑 -->
